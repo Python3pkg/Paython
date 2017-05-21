@@ -65,7 +65,7 @@ class Samurai(Gateway):
         Translates the data for billing_info
         """
         new_dict = dict()
-        for k, v in info.items():
+        for k, v in list(info.items()):
             try:
                 new_dict[self.REQUEST_FIELDS[k]] = v
             except KeyError:

@@ -28,5 +28,5 @@ billing = {
 }
 
 authorization = api.auth('1.00', cc_obj, billing)
-print authorization
-print api.void(authorization['alt_trans_id'])
+print(authorization)
+print(api.void(authorization['alt_trans_id']))
